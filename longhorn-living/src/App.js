@@ -22,7 +22,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </Router>
-      <LoginCard></LoginCard>
+      {/* <LoginCard></LoginCard> */}
     </>
   );
 }

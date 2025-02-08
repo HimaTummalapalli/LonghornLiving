@@ -9,6 +9,17 @@ function MyNavbar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
+        <div className="logo-container">
+          <Link to="/">
+            <img
+              src="/LonghornLivingIcon.jpg"
+              className="img-fluid"
+              alt="Logo"
+              width="50"
+              height="50"
+            />
+          </Link>
+        </div>
         <Navbar.Brand as={Link} to="/">
           LonghornLiving
         </Navbar.Brand>
