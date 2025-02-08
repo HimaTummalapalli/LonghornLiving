@@ -15,14 +15,14 @@ export default function Card({ firstName, lastName, housingLoc, major, year }) {
           />
         </div>
         <p className="name">{firstName + " " + lastName}</p>
-        <p className="other_info">{housingLoc + "|" + major + "|" + year}</p>
-        <a
-          href="google.com"
-          className="btn btn-primary"
-          style={{ marginTop: "30px" }}
-        >
+        <p className="other_info">{housingLoc + " | " + major + " | " + year}</p>
+        <div className="message">
+          <a
+            href="/"
+          >
           Message
-        </a>
+          </a>
+        </div>
       </div>
     </>
   );
