@@ -17,7 +17,7 @@ export default function LoginCard() {
   return (
     <>
         <form onSubmit={handleSubmit}>
-            <label>Sign In</label>
+            <h2><label>Sign In</label></h2>
             <input
                 type="text"
                 value={username}
