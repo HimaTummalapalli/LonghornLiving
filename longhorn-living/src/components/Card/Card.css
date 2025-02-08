@@ -1,0 +1,30 @@
+.card_div {
+  height: 250px;
+  width: 200px;
+  border: 1.5px solid #bf5700;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.img_div {
+  height: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile_pic {
+  height: 60px;
+  width: 60px;
+  margin: auto;
+}
+
+.name {
+  text-align: center;
+  font-weight: bold;
+  margin: 2px;
+}
+
+.other_info {
+  text-align: center;
+  margin: 1px;
+}
