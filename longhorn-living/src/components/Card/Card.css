@@ -30,6 +30,11 @@
   margin: 2px;
 }
 
+.message_outer {
+  display: flex;
+  justify-content: center;
+}
+
 .message {
   height: 35px;
   width: 130px;
@@ -37,10 +42,6 @@
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 180px;
-  left: 35px;
-  
 }
 
 .message a {
