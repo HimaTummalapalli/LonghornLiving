@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../pages/home";
 import Login from "../pages/login";
 import Profile from "../pages/profile";
-import Navbar from "../components/NavBar.js";
+import Navbar from "../components/MyNavBar.jsx";
 
 const AppRoutes = () => {
   return (
