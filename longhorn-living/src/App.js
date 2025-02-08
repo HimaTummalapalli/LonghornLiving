@@ -14,7 +14,6 @@ import MyNavbar from "./components/MyNavBar";
 function App() {
   return (
     <>
-    <LoginCard></LoginCard>
       <Router>
         <MyNavbar />
         <Routes>
@@ -23,6 +22,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </Router>
+      <LoginCard></LoginCard>
     </>
   );
 }
