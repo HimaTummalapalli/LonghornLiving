@@ -16,12 +16,16 @@ export default function Card({ firstName, lastName, housingLoc, major, year }) {
         </div>
         <p className="name">{firstName + " " + lastName}</p>
         <p className="other_info">{housingLoc + " | " + major + " | " + year}</p>
-        <div className="message">
-          <a
-            href="/"
-          >
-          Message
-          </a>
+        <br></br>
+        <br></br>
+        <div className="message_outer">
+          <div className="message">
+            <a
+              href="/"
+            >
+            Message
+            </a>
+          </div>
         </div>
       </div>
     </>
