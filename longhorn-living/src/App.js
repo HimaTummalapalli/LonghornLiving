@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Grid from "./components/Grid/Grid";
+import LoginCard from "./components/LoginCard/LoginCard";
 import AppRoutes from "./routes/AppRoutes";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -14,29 +14,15 @@ import MyNavbar from "./components/MyNavBar";
 function App() {
   return (
     <>
+    <LoginCard></LoginCard>
       <Router>
-<<<<<<< Updated upstream
-        <Navbar />
-=======
         <MyNavbar />
->>>>>>> Stashed changes
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </Router>
-<<<<<<< Updated upstream
-=======
-
-      <Card
-        firstName="Hima"
-        lastName="T"
-        housingLoc="Off campus"
-        major="CS"
-        year="Senior"
-      ></Card>
->>>>>>> Stashed changes
     </>
   );
 }
