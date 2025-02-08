@@ -1,6 +1,5 @@
 import logo from "./logo.svg";
 import "./App.css";
-import LoginCard from "./components/LoginCard/LoginCard";
 import AppRoutes from "./routes/AppRoutes";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -22,7 +21,6 @@ function App() {
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </Router>
-      {/* <LoginCard></LoginCard> */}
     </>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
-// import "../Card/Card.css";
+import "./LoginCard.css"
+import "../Card/Card.css";
 // import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 // import { Highlight } from 'react-highlight-regex'
@@ -16,20 +17,36 @@ export default function LoginCard() {
 
   return (
     <>
-        <form onSubmit={handleSubmit}>
-            <h2><label>Sign In</label></h2>
-            <input
-                type="text"
-                value={username}
-                onChange={(e) => setUserName(e.target.value)}
-            />
-            <input
-                type="text"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-            />
-            <input type="submit"/>
-        </form>
+        <div className="card_outer">
+            <div className="login_card_div">
+                <form onSubmit={handleSubmit}> 
+                    <h2 className="sign_in"><label>Sign In</label></h2>
+                    <input
+                        className="sign_in_input"
+                        type="text"
+                        value={username}
+                        onChange={(e) => setUserName(e.target.value)}
+                        placeholder="Username"
+                    />
+                    <br></br>
+                    <br></br>
+                    <input
+                        className="sign_in_input"
+                        type="text"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder="Password"
+                    />
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <div className="login_div">
+                        <input type="submit" className="message"/>
+                    </div>
+                    <p className="new_user">New User? <a>Create Account</a></p>
+                </form>
+            </div>
+        </div>
     </>
   );
 }
