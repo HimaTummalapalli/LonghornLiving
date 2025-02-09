@@ -9,7 +9,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 function FormPage() {
   const [formData, setFormData] = useState({
-    username: "",
+    id: "",
     cleanliness: "",
     active: "",
     study: "",
@@ -30,7 +30,7 @@ function FormPage() {
     setFormData((formData) => ({...formData, username: (username ? username : "")}))
     try {
       const response = await axios.post("http://localhost:3000/forms", formData);
-      console.log('Success: ', response.data);
+      console.log('Success: ');
       setFormData({})
       navigate("/")
   } catch (error) {

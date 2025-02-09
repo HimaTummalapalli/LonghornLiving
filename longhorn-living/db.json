@@ -1,116 +1,133 @@
 {
   "users": [
     {
-      "username": "himat5",
+      "id": "himat5",
       "firstName": "Hima",
       "lastName": "T",
       "housingLoc": "Off Campus",
       "major": "CS",
       "year": "Senior",
-      "gender": "female",
-      "id": "a658"
+      "gender": "female"
     },
     {
-      "username": "reg42",
+      "id": "reg42",
       "firstName": "Regina",
       "lastName": "Z",
       "housingLoc": "Off Campus",
       "major": "CS",
       "year": "Senior",
-      "gender": "female",
-      "id": "832d"
+      "gender": "female"
     },
     {
-      "username": "bob23",
+      "id": "bob23",
       "firstName": "Bob",
       "lastName": "K",
       "housingLoc": "On Campus",
       "major": "Bio",
       "year": "Sophomore",
-      "gender": "male",
-      "id": "fa30"
+      "gender": "male"
     },
     {
-      "username": "jhgwg",
+      "id": "jhgwg",
       "firstName": "John",
       "lastName": "Done",
       "housingLoc": "On Campus",
       "major": "Finance",
       "year": "Freshman",
-      "gender": "male",
-      "id": "59af"
+      "gender": "male"
+    },
+    {
+      "id": "jdoe",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "gender": "Female",
+      "major": "English",
+      "year": "Sophomore",
+      "housingLoc": "On Campus"
     }
   ],
   "logins": [
     {
-      "username": "himat5",
-      "password": "bob234",
-      "id": "de40"
+      "id": "himat5",
+      "password": "bob234"
     },
     {
-      "username": "reg42",
-      "password": "pword14",
-      "id": "80f8"
+      "id": "reg42",
+      "password": "pword14"
     },
     {
-      "username": "bob23",
-      "password": "password!",
-      "id": "6906"
+      "id": "bob23",
+      "password": "password!"
     },
     {
-      "username": "jhgwg",
-      "password": "creativemind2",
-      "id": "2f5d"
+      "id": "jhgwg",
+      "password": "creativemind2"
+    },
+    {
+      "id": "jdoe",
+      "password": "forever21"
     }
-  ], 
+  ],
   "forms": [
     {
-      "username": "himat5",
-      "Active": "Couch Potato",
-      "Cleanliness": "Moderately Tidy",
+      "id": "himat5",
+      "Active": "1",
+      "Cleanliness": "3",
       "Clubs": "TA, WiCS",
-      "Extracurriculars": "Somewhat Involved",
+      "Extracurriculars": "2",
       "Introduce": "Cooking, Playing Video Games",
       "Pet": "No",
-      "Sleep": "Early Riser",
+      "Sleep": "1",
       "Smoke": "No",
-      "Study": "Regularly"
+      "Study": "3"
     },
     {
-      "username": "reg42",
-      "Active": "Very Active",
-      "Cleanliness": "Very Messy",
+      "id": "reg42",
+      "Active": "5",
+      "Cleanliness": "1",
       "Clubs": "TA, WiCS",
-      "Extracurriculars": "Moderately Involved",
+      "Extracurriculars": "3",
       "Introduce": "Take Walks, Read, Listen to Music, Play Racket Sports, Watch Shows and Movies",
       "Pet": "Yes",
-      "Sleep": "Night Owl",
+      "Sleep": "5",
       "Smoke": "No",
-      "Study": "Frequently"
+      "Study": "4"
     },
     {
-      "username": "bob23",
-      "Active": "Highly Active",
-      "Cleanliness": "Very Neat",
+      "id": "bob23",
+      "Active": "4",
+      "Cleanliness": "5",
       "Clubs": "HBA, MDC",
-      "Extracurriculars": "Very Involved",
+      "Extracurriculars": "5",
       "Introduce": "Running, Biking, Hanging Out with Friends",
       "Pet": "No",
-      "Sleep": "Somewhat Late",
+      "Sleep": "4",
       "Smoke": "Yes",
-      "Study": "Occasionally"
+      "Study": "2"
     },
     {
-      "username": "jhgwg",
-      "Active": "Lightly Active",
-      "Cleanliness": "Somewhat Neat",
+      "id": "jhgwg",
+      "Active": "2",
+      "Cleanliness": "4",
       "Clubs": "Texas Nutrition, Texas Table Tennis",
-      "Extracurriculars": "Not Involved",
+      "Extracurriculars": "1",
       "Introduce": "Workout, Watch Movies, Listen to Music",
       "Pet": "Yes",
-      "Sleep": "Balanced",
+      "Sleep": "3",
       "Smoke": "No",
-      "Study": "All the Time"
+      "Study": "5"
+    },
+    {
+      "id": "",
+      "cleanliness": "2",
+      "active": "3",
+      "study": "3",
+      "sleep": "2",
+      "extracurricular": "3",
+      "smoke": "1",
+      "pet": "1",
+      "clubs": "TPEO",
+      "about": "Pop music, art, anime, cooking"
     }
   ]
 }

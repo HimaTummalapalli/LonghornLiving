@@ -21,7 +21,7 @@ export default function CreateAcc() {
     e.preventDefault()
     try {
         const response = await axios.post("http://localhost:3000/users", {
-            username: username,
+            id: username,
             firstName: firstName,
             lastName: lastName,
             gender: gender,
@@ -29,17 +29,17 @@ export default function CreateAcc() {
             year: classLevel,
             housingLoc: housingLoc
         });
-        console.log('Success: ', response.data);
+        console.log('Success: ');
     } catch (error) {
-        console.error('Error: ', error)
+        console.error('Error: ')
     }
 
     try {
         const response = await axios.post("http://localhost:3000/logins", {
-            username: username,
+            id: username,
             password: password
         });
-        console.log('Success: ', response.data);
+        console.log('Success: ');
         setUsername("");
         setPassword("");
         setFirstName("");
