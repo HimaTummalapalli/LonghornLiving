@@ -1,8 +1,9 @@
 // src/pages/Login.jsx
 import React from "react";
+import LoginCard from "../components/LoginCard/LoginCard";
 
 function Login() {
-  return <h1>Login Page</h1>;
+  return(<LoginCard></LoginCard>)
 }
 
 export default Login;

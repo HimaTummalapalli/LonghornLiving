@@ -1,0 +1,45 @@
+.card_outer {
+    height: 850px;
+    display: flex;
+    justify-content: center;
+}
+
+.login_card_div {
+    width: 500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #BF5700;
+    border-radius: 10px;
+}
+
+.sign_in {
+    text-align: center;
+    color: #fff8f2;
+    margin-top: 60px;
+}
+
+.sign_in_input {
+    width: 350px;
+    height: 45px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: white;
+    background-color: #fff8f2;
+    margin: auto;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.login_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.new_user {
+    margin-top: 100px;
+    text-align: center;
+    color: #fff8f2;
+}
