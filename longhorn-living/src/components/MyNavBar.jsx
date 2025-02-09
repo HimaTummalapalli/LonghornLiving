@@ -31,7 +31,7 @@ function MyNavbar() {
             </Nav.Link>
             <Navbar.Brand as={Link} to="/profile" style={{ color: "white" }}>
               <img
-                src="/LonghornLivingIcon.jpg"
+                src="/default_icon1.png"
                 alt="profilePic"
                 width="50"
                 height="30"

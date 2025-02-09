@@ -4,17 +4,16 @@ import "./Card.css";
 // import Highlighter from "react-highlight-words";
 
 export default function Card({ firstName, lastName, housingLoc, major, year }) {
-
   const handleClick = () => {
-    alert("We've let them know!")
-  }
+    alert("We've let them know!");
+  };
 
   return (
     <>
       <div id="bob" className="card_div">
         <div className="img_div">
           <img
-            src="LonghornLivingIcon.jpg"
+            src="/default_icon1.png"
             alt="Profile Pic"
             className="profile_pic"
           />
@@ -24,7 +23,9 @@ export default function Card({ firstName, lastName, housingLoc, major, year }) {
           {housingLoc + " | " + major + " | " + year}
         </p>
         <div className="message_outer">
-          <button className="message" onClick={handleClick}>Interested!</button>
+          <button className="message" onClick={handleClick}>
+            Interested!
+          </button>
         </div>
       </div>
     </>

@@ -44,6 +44,24 @@
       "major": "Music",
       "year": "Freshman",
       "housingLoc": "On Campus"
+    },
+    {
+      "id": "test",
+      "firstName": "hi",
+      "lastName": "my",
+      "gender": "female",
+      "major": "cs",
+      "year": "freshman",
+      "housingLoc": "off-campus"
+    },
+    {
+      "id": "rere",
+      "firstName": "re",
+      "lastName": "re",
+      "gender": "female",
+      "major": "cs",
+      "year": "freshman",
+      "housingLoc": "off-campus"
     }
   ],
   "logins": [
@@ -66,6 +84,14 @@
     {
       "id": "jdoe",
       "password": "forever21"
+    },
+    {
+      "id": "test",
+      "password": "1234"
+    },
+    {
+      "id": "rere",
+      "password": "1234"
     }
   ],
   "forms": [
