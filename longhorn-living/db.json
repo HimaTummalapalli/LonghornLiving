@@ -44,6 +44,47 @@
       "major": "English",
       "year": "Freshman",
       "housingLoc": "On Campus"
+    },
+    {
+      "id": "5d81",
+      "firstName": "Pablo",
+      "lastName": "Picasso",
+      "gender": "Male",
+      "major": "Art",
+      "year": "Senior",
+      "housingLoc": "Off Campus"
+    }
+  ],
+  "logins": [
+    {
+      "username": "himat5",
+      "password": "bob234",
+      "id": "de40"
+    },
+    {
+      "username": "reg42",
+      "password": "pword14",
+      "id": "80f8"
+    },
+    {
+      "username": "bob23",
+      "password": "password!",
+      "id": "6906"
+    },
+    {
+      "username": "jhgwg",
+      "password": "creativemind2",
+      "id": "2f5d"
+    },
+    {
+      "username": "jdr",
+      "password": "smart4",
+      "id": "dd04"
+    },
+    {
+      "id": "43d4",
+      "username": "pp43",
+      "password": "goodtoknow"
     }
   ]
 }

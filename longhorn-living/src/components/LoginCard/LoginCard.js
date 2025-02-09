@@ -1,18 +1,47 @@
 import React from "react";
 import "./LoginCard.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 // import { Highlight } from 'react-highlight-regex'
 // import Highlighter from "react-highlight-words";
 
 export default function LoginCard() {
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const [userInfo, setUserInfo] = useState([]);
+//   const [error, setError] = useState(null);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const getUserInfo = async() => {
+      try {
+        const response = await axios.get("http://localhost:3000/logins")
+        setUserInfo(response.data)
+      } catch (e) {
+        console.log(e)
+      }
+    }
+
+    getUserInfo()
+  }, []);
+
   const handleSubmit = () => {
-    navigate("/");
+    console.log(password)
+    const user = userInfo.find(
+        (user) => user.username === username && user.password === password
+    );
+
+    if (user) {
+        setIsAuthenticated(true);
+      } else {
+        alert('Invalid username and password')
+        setUserName("")
+        setPassword("")
+        // setError(null)
+      }
   };
 
   return (
