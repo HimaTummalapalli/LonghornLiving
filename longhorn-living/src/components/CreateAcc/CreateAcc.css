@@ -43,3 +43,13 @@
     justify-content: center;
     margin-top: 40px;
 }
+
+.create_acc_btn {
+    margin: 20px;
+    height: 35px;
+    width: 130px;
+    border: 1.5px solid #bf5700;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}

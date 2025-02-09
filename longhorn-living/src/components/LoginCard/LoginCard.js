@@ -1,6 +1,5 @@
 import React from "react";
 import "./LoginCard.css"
-import "../Card/Card.css";
 import {Link} from 'react-router-dom';
 import { useState } from 'react';
 // import { Highlight } from 'react-highlight-regex'
@@ -16,10 +15,9 @@ export default function LoginCard() {
     };
 
   return (
-    <>
         <div className="card_outer">
             <div className="login_card_div">
-                <form onSubmit={handleSubmit}> 
+                <form className="login_card_form" onSubmit={handleSubmit}> 
                     <h2 className="sign_in"><label>Sign In</label></h2>
                     <input
                         className="sign_in_input"
@@ -41,12 +39,11 @@ export default function LoginCard() {
                     <br></br>
                     <br></br>
                     <div className="login_div">
-                        <input type="submit" className="message"/>
+                        <input type="submit" className="login"/>
                     </div>
                     <p className="new_user">New User? <Link to="/create_acc">Create Account</Link></p>
                 </form>
             </div>
         </div>
-    </>
   );
 }

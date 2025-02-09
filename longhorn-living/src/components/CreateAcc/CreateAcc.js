@@ -1,6 +1,5 @@
 import React from "react";
 import "./CreateAcc.css"
-import "../Card/Card.css";
 // import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 // import { Highlight } from 'react-highlight-regex'
@@ -63,7 +62,7 @@ export default function CreateAcc() {
                     <br></br>
                     <br></br>
                     <div className="create_acc_btn_div">
-                        <input type="submit" className="message"/>
+                        <input type="submit" className="create_acc_btn"/>
                     </div>
                 </form>
             </div>
