@@ -1,10 +1,10 @@
-.card_outer {
+.create_card_outer {
     height: 850px;
     display: flex;
     justify-content: center;
 }
 
-.login_card_div {
+.create_acc_div {
     width: 500px;
     height: 700px;
     display: flex;
@@ -12,41 +12,40 @@
     margin: auto;
     background-color: #BF5700;
     border-radius: 10px;
+    flex-direction: column; /* Stacks inputs vertically */
+    align-items: center;
 }
 
-.sign_in {
+.create_acc {
     text-align: center;
     color: #fff8f2;
-    margin-top: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.sign_in_input {
+
+.create_acc_input {
     width: 350px;
     height: 45px;
     border-radius: 10px;
     border-width: 1px;
     border-color: white;
     background-color: #fff8f2;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
     padding: 15px;
+    display: block;
 }
 
-.login_div {
+.create_acc_btn_div {
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    height: 60px;
 }
 
-.new_user {
-    margin-top: 100px;
-    text-align: center;
-    color: #fff8f2;
-}
-
-.login {
-    margin: 40px;
+.create_acc_btn {
+    margin: 20px;
     height: 35px;
     width: 130px;
     border: 1.5px solid #bf5700;

@@ -3,5 +3,6 @@
     column-gap: 30px;
     row-gap: 30px;
     justify-content: center;
-    grid-template-columns: repeat(4, auto)
+    grid-template-columns: repeat(4, auto);
+    margin: auto;
 }
