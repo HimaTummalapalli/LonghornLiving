@@ -8,8 +8,9 @@ import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
 
 function FormPage() {
+  let username = sessionStorage.getItem('username')
   const [formData, setFormData] = useState({
-    id: "",
+    id: username,
     cleanliness: "",
     active: "",
     study: "",
@@ -21,35 +22,20 @@ function FormPage() {
     about: "",
   });
 
-  // const location = useLocation()
-  // const username = location.state?.username ? location.state.username : null
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   async function handleSubmit(e) {
-    e.preventDefault();
-    const username = sessionStorage.getItem("username");
-    setFormData((formData) => ({
-      ...formData,
-      username: username ? username : "",
-    }));
+    e.preventDefault()
+    console.log(username)
     try {
-      const response = await axios.post(
-        "http://localhost:3000/forms",
-        formData
-      );
-      console.log("Success: ");
-      setFormData({});
-      navigate("/");
-    } catch (error) {
-      console.error("Error: ", error);
-    }
-  }
-  // const handleSubjectChange = (sub) => {
-  //   setSubjects((prev) => ({
-  //     ...prev,
-  //     [sub]: !prev[sub],
-  //   }));
-  // };
+      const response = await axios.post("http://localhost:3000/forms", formData);
+      console.log('Success: ');
+      setFormData({})
+      navigate("/")
+  } catch (error) {
+      console.error('Error: ', error)
+  }  };
+
   const handleReset = () => {
     // Reset all state variables here
     setFormData({
