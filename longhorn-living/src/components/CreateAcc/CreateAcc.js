@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 // import { Highlight } from 'react-highlight-regex'
 // import Highlighter from "react-highlight-words";
+import axios from "axios";
 
 export default function CreateAcc() {
   const [firstName, setFirstName] = useState("");
@@ -14,9 +15,21 @@ export default function CreateAcc() {
   const [housingLoc, setHousingLoc] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = () => {
-    navigate("/");
-  };
+  async function handleSubmit() {
+    try {
+        const response = await axios.post("http://localhost:3000/users", {
+            firstName: firstName,
+            lastName: lastName,
+            gender: gender,
+            major: major,
+            year: classLevel,
+            housingLoc: housingLoc
+        });
+        console.log('Success: ', response.data);
+    } catch (error) {
+        console.error('Error: ', error)
+    }
+  }
 
   return (
     <>

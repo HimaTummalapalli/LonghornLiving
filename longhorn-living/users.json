@@ -1,33 +1,49 @@
 {
-    "users": [
-        {
-            "firstName": "Hima",
-            "lastName": "T",
-            "housingLoc": "Off Campus",
-            "major": "CS",
-            "year": "Senior",
-            "gender": "female"
-        }, {
-            "firstName": "Regina",
-            "lastName": "Z",
-            "housingLoc": "Off Campus",
-            "major": "CS",
-            "year": "Senior",
-            "gender": "female"
-        }, {
-            "firstName": "Bob",
-            "lastName": "K",
-            "housingLoc": "On Campus",
-            "major": "Bio",
-            "year": "Sophomore",
-            "gender": "male"
-        }, {
-            "firstName": "John",
-            "lastName": "Done",
-            "housingLoc": "On Campus",
-            "major": "Finance",
-            "year": "Freshman",
-            "gender": "male"
-        }
-    ]
+  "users": [
+    {
+      "firstName": "Hima",
+      "lastName": "T",
+      "housingLoc": "Off Campus",
+      "major": "CS",
+      "year": "Senior",
+      "gender": "female",
+      "id": "a658"
+    },
+    {
+      "firstName": "Regina",
+      "lastName": "Z",
+      "housingLoc": "Off Campus",
+      "major": "CS",
+      "year": "Senior",
+      "gender": "female",
+      "id": "832d"
+    },
+    {
+      "firstName": "Bob",
+      "lastName": "K",
+      "housingLoc": "On Campus",
+      "major": "Bio",
+      "year": "Sophomore",
+      "gender": "male",
+      "id": "fa30"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Done",
+      "housingLoc": "On Campus",
+      "major": "Finance",
+      "year": "Freshman",
+      "gender": "male",
+      "id": "59af"
+    },
+    {
+      "id": "3b0c",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "gender": "Female",
+      "major": "English",
+      "year": "Freshman",
+      "housingLoc": "On Campus"
+    }
+  ]
 }
