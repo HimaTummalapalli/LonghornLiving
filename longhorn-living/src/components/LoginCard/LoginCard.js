@@ -36,6 +36,7 @@ export default function LoginCard() {
 
     if (user) {
         setIsAuthenticated(true);
+        navigate("/")
       } else {
         alert('Invalid username and password')
         setUserName("")

@@ -20,6 +20,7 @@ export default function CreateAcc() {
   async function handleSubmit() {
     try {
         const response = await axios.post("http://localhost:3000/users", {
+            username: username,
             firstName: firstName,
             lastName: lastName,
             gender: gender,
@@ -38,6 +39,7 @@ export default function CreateAcc() {
             password: password
         });
         console.log('Success: ', response.data);
+        // Try to redirect user to the form page
     } catch (error) {
         console.error('Error: ', error)
     }

@@ -1,6 +1,7 @@
 {
   "users": [
     {
+      "username": "himat5",
       "firstName": "Hima",
       "lastName": "T",
       "housingLoc": "Off Campus",
@@ -10,6 +11,7 @@
       "id": "a658"
     },
     {
+      "username": "reg42",
       "firstName": "Regina",
       "lastName": "Z",
       "housingLoc": "Off Campus",
@@ -19,6 +21,7 @@
       "id": "832d"
     },
     {
+      "username": "bob23",
       "firstName": "Bob",
       "lastName": "K",
       "housingLoc": "On Campus",
@@ -28,6 +31,7 @@
       "id": "fa30"
     },
     {
+      "username": "jhgwg",
       "firstName": "John",
       "lastName": "Done",
       "housingLoc": "On Campus",
@@ -35,24 +39,6 @@
       "year": "Freshman",
       "gender": "male",
       "id": "59af"
-    },
-    {
-      "id": "3b0c",
-      "firstName": "Jane",
-      "lastName": "Doe",
-      "gender": "Female",
-      "major": "English",
-      "year": "Freshman",
-      "housingLoc": "On Campus"
-    },
-    {
-      "id": "5d81",
-      "firstName": "Pablo",
-      "lastName": "Picasso",
-      "gender": "Male",
-      "major": "Art",
-      "year": "Senior",
-      "housingLoc": "Off Campus"
     }
   ],
   "logins": [
@@ -75,16 +61,56 @@
       "username": "jhgwg",
       "password": "creativemind2",
       "id": "2f5d"
+    }
+  ], 
+  "forms": [
+    {
+      "username": "himat5",
+      "Active": "Couch Potato",
+      "Cleanliness": "Moderately Tidy",
+      "Clubs": "TA, WiCS",
+      "Extracurriculars": "Somewhat Involved",
+      "Introduce": "Cooking, Playing Video Games",
+      "Pet": "No",
+      "Sleep": "Early Riser",
+      "Smoke": "No",
+      "Study": "Regularly"
     },
     {
-      "username": "jdr",
-      "password": "smart4",
-      "id": "dd04"
+      "username": "reg42",
+      "Active": "Very Active",
+      "Cleanliness": "Very Messy",
+      "Clubs": "TA, WiCS",
+      "Extracurriculars": "Moderately Involved",
+      "Introduce": "Take Walks, Read, Listen to Music, Play Racket Sports, Watch Shows and Movies",
+      "Pet": "Yes",
+      "Sleep": "Night Owl",
+      "Smoke": "No",
+      "Study": "Frequently"
     },
     {
-      "id": "43d4",
-      "username": "pp43",
-      "password": "goodtoknow"
+      "username": "bob23",
+      "Active": "Highly Active",
+      "Cleanliness": "Very Neat",
+      "Clubs": "HBA, MDC",
+      "Extracurriculars": "Very Involved",
+      "Introduce": "Running, Biking, Hanging Out with Friends",
+      "Pet": "No",
+      "Sleep": "Somewhat Late",
+      "Smoke": "Yes",
+      "Study": "Occasionally"
+    },
+    {
+      "username": "jhgwg",
+      "Active": "Lightly Active",
+      "Cleanliness": "Somewhat Neat",
+      "Clubs": "Texas Nutrition, Texas Table Tennis",
+      "Extracurriculars": "Not Involved",
+      "Introduce": "Workout, Watch Movies, Listen to Music",
+      "Pet": "Yes",
+      "Sleep": "Balanced",
+      "Smoke": "No",
+      "Study": "All the Time"
     }
   ]
 }
