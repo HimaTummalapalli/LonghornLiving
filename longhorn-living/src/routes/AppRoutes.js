@@ -3,6 +3,7 @@ import Home from "../pages/home";
 import Login from "../pages/login";
 import Profile from "../pages/profile";
 import Navbar from "../components/MyNavBar.jsx";
+import CreateAccPage from "../pages/CreateAccPage.jsx";
 
 const AppRoutes = () => {
   return (
@@ -12,6 +13,7 @@ const AppRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/create_acc" element={<CreateAccPage />} />
       </Routes>
     </Router>
   );

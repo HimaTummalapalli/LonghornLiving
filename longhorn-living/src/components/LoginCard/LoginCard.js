@@ -1,7 +1,7 @@
 import React from "react";
 import "./LoginCard.css"
 import "../Card/Card.css";
-// import { useNavigate } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import { useState } from 'react';
 // import { Highlight } from 'react-highlight-regex'
 // import Highlighter from "react-highlight-words";
@@ -43,7 +43,7 @@ export default function LoginCard() {
                     <div className="login_div">
                         <input type="submit" className="message"/>
                     </div>
-                    <p className="new_user">New User? <a>Create Account</a></p>
+                    <p className="new_user">New User? <Link to="/create_acc">Create Account</Link></p>
                 </form>
             </div>
         </div>

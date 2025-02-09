@@ -1,0 +1,45 @@
+.create_card_outer {
+    height: 850px;
+    display: flex;
+    justify-content: center;
+}
+
+.create_acc_div {
+    width: 500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #BF5700;
+    border-radius: 10px;
+    flex-direction: column; /* Stacks inputs vertically */
+    align-items: center;
+}
+
+.create_acc {
+    text-align: center;
+    color: #fff8f2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.create_acc_input {
+    width: 350px;
+    height: 45px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: white;
+    background-color: #fff8f2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 15px;
+    display: block;
+}
+
+.create_acc_btn_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
