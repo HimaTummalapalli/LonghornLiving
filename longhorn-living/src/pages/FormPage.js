@@ -5,9 +5,11 @@
 import "./Preference.css";
 import { React, useState, useEffect } from "react";
 import axios from "axios";
+import { useLocation, useNavigate } from "react-router-dom";
 
-function FormPage({username}) {
+function FormPage() {
   const [formData, setFormData] = useState({
+    id: "",
     cleanliness: "",
     active: "",
     study: "",
@@ -19,56 +21,23 @@ function FormPage({username}) {
     about: "",
   });
 
-  const [oldFormData, setOldFormData] = useState({})
+  // const location = useLocation()
+  // const username = location.state?.username ? location.state.username : null
+  const navigate = useNavigate()
 
-  useEffect(() => {
-    const getUserInfo = async() => {
-      try {
-        const response = await axios.get("http://localhost:3000/forms")
-        setOldFormData(response.data)
-        console.log(oldFormData)
-      } catch (e) {
-        console.log(e)
-      }
-    }
-
-    getUserInfo()
-  }, []);
-
-  async function handleSubmit() {
-    console.log("success")
-    // const userFormInfo = oldFormData.find(
-    //     (info) => info.username === username
-    // );
-
-    // if (userFormInfo) {
-    //     setOldFormData((oldFormData) => ({...formData, }))
-    //   } else {
-    //     alert('Invalid username and password')
-    //     setUserName("")
-    //     setPassword("")
-    //     // setError(null)
-    //   }
-    // try {
-    //   const response = await axios.post("http://localhost:3000/forms", {
-    //       Cleanliness: cleanliness,
-    //       Active: active,
-    //       Study: study,
-    //       Sleep: sleep,
-    //       Extracurriculars: extracurricular,
-    //       Smoke: smoke,
-    //       Pet: pet,
-    //       Clubs: clubs,
-    //       Introduce: about
-    //   });
-    //   console.log('Success: ', response.data);
-    // } catch (error) {
-    //     console.error('Error: ', error)
-    // }
+  async function handleSubmit(e) {
+    e.preventDefault()
+    const username = sessionStorage.getItem('username')
+    setFormData((formData) => ({...formData, username: (username ? username : "")}))
+    try {
+      const response = await axios.post("http://localhost:3000/forms", formData);
+      console.log('Success: ');
+      setFormData({})
+      navigate("/")
+  } catch (error) {
+      console.error('Error: ', error)
+  }  
   };
-
-
-
   // const handleSubjectChange = (sub) => {
   //   setSubjects((prev) => ({
   //     ...prev,
