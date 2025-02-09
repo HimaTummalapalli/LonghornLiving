@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "username": "himat5",
+      "firstName": "Hima",
+      "lastName": "T",
+      "housingLoc": "Off Campus",
+      "major": "CS",
+      "year": "Senior",
+      "gender": "female",
+      "id": "a658"
+    },
+    {
+      "username": "reg42",
+      "firstName": "Regina",
+      "lastName": "Z",
+      "housingLoc": "Off Campus",
+      "major": "CS",
+      "year": "Senior",
+      "gender": "female",
+      "id": "832d"
+    },
+    {
+      "username": "bob23",
+      "firstName": "Bob",
+      "lastName": "K",
+      "housingLoc": "On Campus",
+      "major": "Bio",
+      "year": "Sophomore",
+      "gender": "male",
+      "id": "fa30"
+    },
+    {
+      "username": "jhgwg",
+      "firstName": "John",
+      "lastName": "Done",
+      "housingLoc": "On Campus",
+      "major": "Finance",
+      "year": "Freshman",
+      "gender": "male",
+      "id": "59af"
+    }
+  ],
+  "logins": [
+    {
+      "username": "himat5",
+      "password": "bob234",
+      "id": "de40"
+    },
+    {
+      "username": "reg42",
+      "password": "pword14",
+      "id": "80f8"
+    },
+    {
+      "username": "bob23",
+      "password": "password!",
+      "id": "6906"
+    },
+    {
+      "username": "jhgwg",
+      "password": "creativemind2",
+      "id": "2f5d"
+    }
+  ], 
+  "forms": [
+    {
+      "username": "himat5",
+      "Active": "Couch Potato",
+      "Cleanliness": "Moderately Tidy",
+      "Clubs": "TA, WiCS",
+      "Extracurriculars": "Somewhat Involved",
+      "Introduce": "Cooking, Playing Video Games",
+      "Pet": "No",
+      "Sleep": "Early Riser",
+      "Smoke": "No",
+      "Study": "Regularly"
+    },
+    {
+      "username": "reg42",
+      "Active": "Very Active",
+      "Cleanliness": "Very Messy",
+      "Clubs": "TA, WiCS",
+      "Extracurriculars": "Moderately Involved",
+      "Introduce": "Take Walks, Read, Listen to Music, Play Racket Sports, Watch Shows and Movies",
+      "Pet": "Yes",
+      "Sleep": "Night Owl",
+      "Smoke": "No",
+      "Study": "Frequently"
+    },
+    {
+      "username": "bob23",
+      "Active": "Highly Active",
+      "Cleanliness": "Very Neat",
+      "Clubs": "HBA, MDC",
+      "Extracurriculars": "Very Involved",
+      "Introduce": "Running, Biking, Hanging Out with Friends",
+      "Pet": "No",
+      "Sleep": "Somewhat Late",
+      "Smoke": "Yes",
+      "Study": "Occasionally"
+    },
+    {
+      "username": "jhgwg",
+      "Active": "Lightly Active",
+      "Cleanliness": "Somewhat Neat",
+      "Clubs": "Texas Nutrition, Texas Table Tennis",
+      "Extracurriculars": "Not Involved",
+      "Introduce": "Workout, Watch Movies, Listen to Music",
+      "Pet": "Yes",
+      "Sleep": "Balanced",
+      "Smoke": "No",
+      "Study": "All the Time"
+    }
+  ]
+}

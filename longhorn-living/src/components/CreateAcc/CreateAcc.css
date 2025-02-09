@@ -20,9 +20,7 @@
     text-align: center;
     color: #fff8f2;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
-
 
 .create_acc_input {
     width: 350px;
@@ -33,7 +31,7 @@
     background-color: #fff8f2;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 15px;
     display: block;
 }
@@ -45,7 +43,7 @@
 }
 
 .create_acc_btn {
-    margin: 20px;
+    /* margin: 20px; */
     height: 35px;
     width: 130px;
     border: 1.5px solid #bf5700;

@@ -4,8 +4,11 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 // import { Highlight } from 'react-highlight-regex'
 // import Highlighter from "react-highlight-words";
+import axios from "axios";
 
 export default function CreateAcc() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [gender, setGender] = useState("");
@@ -14,9 +17,33 @@ export default function CreateAcc() {
   const [housingLoc, setHousingLoc] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = () => {
-    navigate("/");
-  };
+  async function handleSubmit() {
+    try {
+        const response = await axios.post("http://localhost:3000/users", {
+            username: username,
+            firstName: firstName,
+            lastName: lastName,
+            gender: gender,
+            major: major,
+            year: classLevel,
+            housingLoc: housingLoc
+        });
+        console.log('Success: ', response.data);
+    } catch (error) {
+        console.error('Error: ', error)
+    }
+
+    try {
+        const response = await axios.post("http://localhost:3000/logins", {
+            username: username,
+            password: password
+        });
+        console.log('Success: ', response.data);
+        // Try to redirect user to the form page
+    } catch (error) {
+        console.error('Error: ', error)
+    }
+  }
 
   return (
     <>
@@ -24,6 +51,20 @@ export default function CreateAcc() {
         <div className="create_acc_div">
           <form onSubmit={handleSubmit}>
             <h2 className="create_acc">Create Account</h2>
+            <input
+              className="create_acc_input"
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Username"
+            />
+            <input
+              className="create_acc_input"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Password"
+            />
             <input
               className="create_acc_input"
               type="text"
@@ -66,9 +107,6 @@ export default function CreateAcc() {
               onChange={(e) => setHousingLoc(e.target.value)}
               placeholder="Housing Location"
             />
-            <br></br>
-            <br></br>
-            <br></br>
             <div className="create_acc_btn_div">
               <input type="submit" className="create_acc_btn" />
             </div>

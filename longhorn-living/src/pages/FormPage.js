@@ -3,9 +3,10 @@
 // and Basic Form Functionalities
 
 import "./Preference.css";
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
+import axios from "axios";
 
-function FormPage() {
+function FormPage({username}) {
   const [formData, setFormData] = useState({
     cleanliness: "",
     active: "",
@@ -18,10 +19,55 @@ function FormPage() {
     about: "",
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
+  const [oldFormData, setOldFormData] = useState({})
+
+  useEffect(() => {
+    const getUserInfo = async() => {
+      try {
+        const response = await axios.get("http://localhost:3000/forms")
+        setOldFormData(response.data)
+        console.log(oldFormData)
+      } catch (e) {
+        console.log(e)
+      }
+    }
+
+    getUserInfo()
+  }, []);
+
+  async function handleSubmit() {
+    console.log("success")
+    // const userFormInfo = oldFormData.find(
+    //     (info) => info.username === username
+    // );
+
+    // if (userFormInfo) {
+    //     setOldFormData((oldFormData) => ({...formData, }))
+    //   } else {
+    //     alert('Invalid username and password')
+    //     setUserName("")
+    //     setPassword("")
+    //     // setError(null)
+    //   }
+    // try {
+    //   const response = await axios.post("http://localhost:3000/forms", {
+    //       Cleanliness: cleanliness,
+    //       Active: active,
+    //       Study: study,
+    //       Sleep: sleep,
+    //       Extracurriculars: extracurricular,
+    //       Smoke: smoke,
+    //       Pet: pet,
+    //       Clubs: clubs,
+    //       Introduce: about
+    //   });
+    //   console.log('Success: ', response.data);
+    // } catch (error) {
+    //     console.error('Error: ', error)
+    // }
   };
+
+
 
   // const handleSubjectChange = (sub) => {
   //   setSubjects((prev) => ({
