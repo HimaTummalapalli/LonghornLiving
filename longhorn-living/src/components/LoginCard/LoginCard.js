@@ -28,15 +28,15 @@ export default function LoginCard() {
     getUserInfo()
   }, []);
 
-  const handleSubmit = () => {
-    console.log(password)
+  const handleSubmit = (e) => {
+    e.preventDefault()
     const user = userInfo.find(
         (user) => user.username === username && user.password === password
     );
 
     if (user) {
         setIsAuthenticated(true);
-        navigate("/")
+        navigate("/form", {state:{username:username}});
       } else {
         alert('Invalid username and password')
         setUserName("")

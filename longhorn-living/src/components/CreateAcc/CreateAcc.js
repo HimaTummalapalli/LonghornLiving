@@ -17,7 +17,8 @@ export default function CreateAcc() {
   const [housingLoc, setHousingLoc] = useState("");
   const navigate = useNavigate();
 
-  async function handleSubmit() {
+  async function handleSubmit(e) {
+    e.preventDefault()
     try {
         const response = await axios.post("http://localhost:3000/users", {
             username: username,
@@ -39,11 +40,20 @@ export default function CreateAcc() {
             password: password
         });
         console.log('Success: ', response.data);
-        // Try to redirect user to the form page
+        setUsername("");
+        setPassword("");
+        setFirstName("");
+        setLastName("");
+        setGender("");
+        setMajor("");
+        setClassLevel("");
+        setHousingLoc("");
+        navigate("/login")
     } catch (error) {
         console.error('Error: ', error)
-    }
+    }  
   }
+  
 
   return (
     <>
@@ -54,6 +64,7 @@ export default function CreateAcc() {
             <input
               className="create_acc_input"
               type="text"
+              required
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               placeholder="Username"
@@ -61,6 +72,7 @@ export default function CreateAcc() {
             <input
               className="create_acc_input"
               type="password"
+              required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Password"
@@ -68,6 +80,7 @@ export default function CreateAcc() {
             <input
               className="create_acc_input"
               type="text"
+              required
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
               placeholder="First Name"
@@ -75,6 +88,7 @@ export default function CreateAcc() {
             <input
               className="create_acc_input"
               type="text"
+              required
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
               placeholder="Last Name"
@@ -82,6 +96,7 @@ export default function CreateAcc() {
             <input
               className="create_acc_input"
               type="text"
+              required
               value={gender}
               onChange={(e) => setGender(e.target.value)}
               placeholder="Gender"
@@ -89,6 +104,7 @@ export default function CreateAcc() {
             <input
               className="create_acc_input"
               type="text"
+              required
               value={major}
               onChange={(e) => setMajor(e.target.value)}
               placeholder="Major"
@@ -96,6 +112,7 @@ export default function CreateAcc() {
             <input
               className="create_acc_input"
               type="text"
+              required
               value={classLevel}
               onChange={(e) => setClassLevel(e.target.value)}
               placeholder="Class Level"
@@ -103,6 +120,7 @@ export default function CreateAcc() {
             <input
               className="create_acc_input"
               type="text"
+              required
               value={housingLoc}
               onChange={(e) => setHousingLoc(e.target.value)}
               placeholder="Housing Location"
