@@ -41,8 +41,8 @@
       "firstName": "Jane",
       "lastName": "Doe",
       "gender": "Female",
-      "major": "English",
-      "year": "Sophomore",
+      "major": "Music",
+      "year": "Freshman",
       "housingLoc": "On Campus"
     }
   ],
@@ -118,16 +118,16 @@
       "Study": "5"
     },
     {
-      "id": "",
+      "id": "jdoe",
       "cleanliness": "2",
-      "active": "3",
-      "study": "3",
+      "active": "2",
+      "study": "2",
       "sleep": "2",
-      "extracurricular": "3",
-      "smoke": "1",
-      "pet": "1",
-      "clubs": "TPEO",
-      "about": "Pop music, art, anime, cooking"
+      "extracurricular": "2",
+      "smoke": "2",
+      "pet": "2",
+      "clubs": "arq",
+      "about": "qwrqr"
     }
   ]
 }
