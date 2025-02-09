@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"; // IMPORTANT for client-side nav
 
 function MyNavbar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" style={{ backgroundColor: "#BF5700" }}>
       <Container>
         <div className="logo-container">
           <Link to="/">
@@ -20,19 +20,19 @@ function MyNavbar() {
             />
           </Link>
         </div>
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand as={Link} to="/" style={{ color: "white" }}>
           LonghornLiving
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">
+            <Nav.Link as={Link} to="/" style={{ color: "white" }}>
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/login">
+            <Nav.Link as={Link} to="/login" style={{ color: "white" }}>
               Login
             </Nav.Link>
-            <Nav.Link as={Link} to="/profile">
+            <Nav.Link as={Link} to="/profile" style={{ color: "white" }}>
               Profile
             </Nav.Link>
           </Nav>

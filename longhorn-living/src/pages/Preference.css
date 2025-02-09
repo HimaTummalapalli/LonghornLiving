@@ -1,9 +1,15 @@
 /* Filename - App.css */
 /* It containds the Form and Page Styling*/
+.FormPage {
+  margin-top: 2rem; /* Adjust as desired */
+  margin-left: 4rem; /* Optional: push everything away from the left edge */
+  margin-right: 4rem;
+}
 
 body {
   background: #f3f3f3;
   text-align: center;
+  color: #bf5700;
 }
 .App {
   background-color: #fff;
@@ -53,13 +59,15 @@ select {
 }
 
 label {
+  font-family: "Open Sans";
+  font-style: normal;
   font-size: 15px;
   display: block;
   width: 100%;
   margin-top: 8px;
   margin-bottom: 5px;
   text-align: left;
-  color: #555;
+  color: #bf5700;
   font-weight: bold;
 }
 
@@ -70,13 +78,13 @@ button {
   border: none;
   color: white;
   cursor: pointer;
-  background-color: #4caf50;
+  background-color: #bf5700;
   width: 40%;
   font-size: 16px;
 }
 textarea {
   resize: none;
-  width: 98%;
+  width: 100%;
   min-height: 100px;
   max-height: 150px;
 }

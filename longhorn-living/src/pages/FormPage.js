@@ -14,6 +14,8 @@ function FormPage() {
     extracurricular: "",
     smoke: "",
     pet: "",
+    clubs: "",
+    about: "",
   });
 
   const handleSubmit = (e) => {
@@ -51,6 +53,7 @@ function FormPage() {
           <select
             name="cleanliness"
             id="cleanliness"
+            required
             value={formData.cleanliness}
             onChange={(e) =>
               setFormData({ ...formData, cleanliness: e.target.value })
@@ -69,6 +72,7 @@ function FormPage() {
           <select
             name="active"
             id="active"
+            required
             value={formData.active}
             onChange={(e) =>
               setFormData({ ...formData, active: e.target.value })
@@ -87,6 +91,7 @@ function FormPage() {
           <select
             name="study"
             id="study"
+            required
             value={formData.study}
             onChange={(e) =>
               setFormData({ ...formData, study: e.target.value })
@@ -105,6 +110,7 @@ function FormPage() {
           <select
             name="sleep"
             id="sleep"
+            required
             value={formData.sleep}
             onChange={(e) =>
               setFormData({ ...formData, sleep: e.target.value })
@@ -123,6 +129,7 @@ function FormPage() {
           <select
             name="extracurricular"
             id="extracurricular"
+            required
             value={formData.extracurricular}
             onChange={(e) =>
               setFormData({ ...formData, extracurricular: e.target.value })
@@ -141,6 +148,7 @@ function FormPage() {
           <select
             name="smoke"
             id="smoke"
+            required
             value={formData.smoke}
             onChange={(e) =>
               setFormData({ ...formData, smoke: e.target.value })
@@ -156,6 +164,7 @@ function FormPage() {
           <select
             name="pet"
             id="pet"
+            required
             value={formData.pet}
             onChange={(e) => setFormData({ ...formData, pet: e.target.value })}
           >
@@ -174,7 +183,8 @@ function FormPage() {
             name="clubs"
             id="clubs"
             cols="30"
-            rows="5"
+            rows="10"
+            value={formData.clubs}
             onChange={(e) =>
               setFormData({ ...formData, clubs: e.target.value })
             }
@@ -192,13 +202,14 @@ function FormPage() {
             id="about"
             cols="30"
             rows="5"
+            value={formData.about}
             onChange={(e) =>
               setFormData({ ...formData, about: e.target.value })
             }
             placeholder="Answer here so your ideal roommate can find you!"
             required
           ></textarea>
-          <button type="reset" value="reset" onClick={() => handleReset()}>
+          <button type="button" onClick={handleReset}>
             Reset
           </button>
           <button type="submit" value="Submit" onClick={(e) => handleSubmit(e)}>
