@@ -10,7 +10,7 @@ import Login from "./pages/Login.jsx";
 import Profile from "./pages/Profile.jsx";
 import MyNavbar from "./components/MyNavBar";
 import CreateAccPage from "./pages/CreateAccPage.jsx";
-
+import FormPage from "./pages/FormPage";
 function App() {
   return (
     <>
@@ -21,6 +21,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/create_acc" element={<CreateAccPage />} />
+          <Route path="/form" element={<FormPage />} />
         </Routes>
       </Router>
     </>
