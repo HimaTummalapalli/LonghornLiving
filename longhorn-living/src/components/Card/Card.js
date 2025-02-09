@@ -18,8 +18,6 @@ export default function Card({ firstName, lastName, housingLoc, major, year }) {
         <p className="other_info">
           {housingLoc + " | " + major + " | " + year}
         </p>
-        <br></br>
-        <br></br>
         <div className="message_outer">
           <div className="message">
             <a href="/">Message</a>
