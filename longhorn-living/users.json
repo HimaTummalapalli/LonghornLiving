@@ -1,0 +1,33 @@
+{
+    "users": [
+        {
+            "firstName": "Hima",
+            "lastName": "T",
+            "housingLoc": "Off Campus",
+            "major": "CS",
+            "year": "Senior",
+            "gender": "female"
+        }, {
+            "firstName": "Regina",
+            "lastName": "Z",
+            "housingLoc": "Off Campus",
+            "major": "CS",
+            "year": "Senior",
+            "gender": "female"
+        }, {
+            "firstName": "Bob",
+            "lastName": "K",
+            "housingLoc": "On Campus",
+            "major": "Bio",
+            "year": "Sophomore",
+            "gender": "male"
+        }, {
+            "firstName": "John",
+            "lastName": "Done",
+            "housingLoc": "On Campus",
+            "major": "Finance",
+            "year": "Freshman",
+            "gender": "male"
+        }
+    ]
+}
