@@ -1,6 +1,6 @@
 import React from "react";
 import "./CreateAcc.css"
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 // import { Highlight } from 'react-highlight-regex'
 // import Highlighter from "react-highlight-words";
@@ -11,10 +11,10 @@ export default function CreateAcc() {
     const [major, setMajor] = useState("")
     const [classLevel, setClassLevel] = useState("")
     const [housingLoc, setHousingLoc] = useState("")
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const handleSubmit = () => {
-       alert("Hello, world!");
+       navigate("/")
     };
 
   return (
@@ -22,7 +22,7 @@ export default function CreateAcc() {
         <div className="create_card_outer">
             <div className="create_acc_div">
                 <form onSubmit={handleSubmit}> 
-                    <h2 className="create_acc"><label>Create Account</label></h2>
+                    <h2 className="create_acc">Create Account</h2>
                     <input
                         className="create_acc_input"
                         type="text"
