@@ -36,7 +36,8 @@ export default function LoginCard() {
 
     if (user) {
         setIsAuthenticated(true);
-        navigate("/form", {state:{username:username}});
+        sessionStorage.setItem('username', user.id)
+        navigate("/form");
       } else {
         alert('Invalid username and password')
         setUserName("")
