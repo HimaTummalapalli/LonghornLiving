@@ -4,6 +4,11 @@ import "./Card.css";
 // import Highlighter from "react-highlight-words";
 
 export default function Card({ firstName, lastName, housingLoc, major, year }) {
+
+  const handleClick = () => {
+    alert("We've let them know!")
+  }
+
   return (
     <>
       <div id="bob" className="card_div">
@@ -19,9 +24,7 @@ export default function Card({ firstName, lastName, housingLoc, major, year }) {
           {housingLoc + " | " + major + " | " + year}
         </p>
         <div className="message_outer">
-          <div className="message">
-            <a href="/">Message</a>
-          </div>
+          <button className="message" onClick={handleClick}>Interested!</button>
         </div>
       </div>
     </>
