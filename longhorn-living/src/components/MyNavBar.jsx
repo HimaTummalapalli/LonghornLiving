@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"; // IMPORTANT for client-side nav
 function MyNavbar() {
   return (
     <Navbar expand="lg" style={{ backgroundColor: "#BF5700" }}>
-      <Container fluid>
+      <Container fluid className="p-0">
         <Navbar.Brand as={Link} to="/" style={{ color: "white" }}>
           <img
             src="/LonghornLivingIcon.jpg"

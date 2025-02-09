@@ -23,21 +23,27 @@ function FormPage() {
 
   // const location = useLocation()
   // const username = location.state?.username ? location.state.username : null
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   async function handleSubmit(e) {
-    e.preventDefault()
-    const username = sessionStorage.getItem('username')
-    setFormData((formData) => ({...formData, username: (username ? username : "")}))
+    e.preventDefault();
+    const username = sessionStorage.getItem("username");
+    setFormData((formData) => ({
+      ...formData,
+      username: username ? username : "",
+    }));
     try {
-      const response = await axios.post("http://localhost:3000/forms", formData);
-      console.log('Success: ');
-      setFormData({})
-      navigate("/")
-  } catch (error) {
-      console.error('Error: ', error)
-  }  
-  };
+      const response = await axios.post(
+        "http://localhost:3000/forms",
+        formData
+      );
+      console.log("Success: ");
+      setFormData({});
+      navigate("/");
+    } catch (error) {
+      console.error("Error: ", error);
+    }
+  }
   // const handleSubjectChange = (sub) => {
   //   setSubjects((prev) => ({
   //     ...prev,
